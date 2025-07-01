@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>💖 a special gift for our 1-month anniversary 💖</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Intro Screen -->
+    <div id="intro-screen" class="fade-in">
+      <h1>💌 Gửi Khuê Anh, phép màu của tớ 💌</h1>
+      <p>Hôm nay là một ngày đặc biệt, tớ có một món quà nho nhỏ muốn gửi tặng cậu. Mong rằng nó sẽ làm cậu thấy thật vui!
+        Dưới đây là 10 câu hỏi tớ đã chuẩn bị. Hãy trả lời đúng, và cậu sẽ được xem phần quà cuối cùng!
+      </p>
+      <button onclick="startQuiz()">Start</button>
+    </div>
+
+    <!-- Question Box -->
+    <div id="question-box" class="fade-in" style="display:none;">
+      <p id="question"></p>
+      <div id="choices"></div>
+      <p id="feedback"></p>
+    </div>
+
+    <!-- Info Screen -->
+    <div id="affirmation-screen" class="fade-in" style="display:none;">
+      <p id="info-message"></p>
+      <button onclick="nextQuestion()">Next Question</button>
+    </div>
+
+    <!-- Final Message -->
+    <div id="final-message" class="fade-in" style="display:none;">
+      <h2>🥰 Cảm ơn cậu, phép màu của tớ. Hãy đi cùng tớ thật lâu, thật xa nữa nhé!
+      Cùng nhau, ta sẽ vượt qua tất cả. Yêu cậu nhiều! 💖</h2>
+      <div class="photo-scroller">
+        <img src="IMG_6847.jpg" alt="photo 1">
+        <img src="IMG_6763.jpg" alt="photo 2">
+        <img src="IMG_7229.jpg" alt="photo 3">
+      </div>
+    </div>
+  </div>
+
+  <!-- Local Music -->
+  <audio id="bg-music" src="photograph.mp3" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
